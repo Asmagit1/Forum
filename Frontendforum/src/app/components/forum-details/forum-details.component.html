@@ -1,0 +1,10 @@
+<div class="container" *ngIf="forum">
+    <h2>Détails du Forum</h2>
+    <p><strong>Titre :</strong> {{ forum.title }}</p>
+    <p><strong>Description :</strong> {{ forum.description }}</p>
+    <p><strong>Auteur :</strong> {{ forum.author }}</p>
+    <p><strong>Créé le :</strong> {{ forum.createdAt | date: 'fullDate' }}</p>
+  
+    <button (click)="goBack()">⬅️ Retour</button>
+  </div>
+  
